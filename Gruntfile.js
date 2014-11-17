@@ -36,7 +36,6 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-mocha-test');
     grunt.registerTask('test', ['jshint', 'start-server', 'ot-discovery', 'kill-server']);
     grunt.registerTask('default', ['test']);
     grunt.loadTasks('tasks');
