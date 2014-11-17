@@ -3,7 +3,7 @@
 
 Hook for ot-flavoured service-discovery.
 
-Assumes the server is running hapi-service-discovery module and has endpoints `discovery/announce` and `discovery/unannounce` available.
+Assumes the server is running hapi-service-discovery module (using ot-service-discovery) and has endpoints `discovery/announce` and `discovery/unannounce` available.
 
 installation:
 
