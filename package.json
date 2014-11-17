@@ -1,0 +1,39 @@
+{
+  "name": "grunt-ot-discovery",
+  "version": "1.0.0",
+  "description": "grunt tasks for opentable flavoured service discovery",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:opentable/grunt-ot-discovery.git"
+  },
+  "keywords": [
+    "grunt",
+    "gruntplugin",
+    "discovery",
+    "opentable"
+  ],
+  "author": "Andy Royle <ajroyle@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opentable/grunt-ot-discovery/issues"
+  },
+  "homepage": "https://github.com/opentable/grunt-ot-discovery",
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-cli": "^0.1.13",
+    "grunt": "^0.4.4"
+  },
+  "dependencies": {
+    "request": "^2.40.0"
+  },
+  "peerDependencies": {
+    "grunt": "^0.4.4"
+  }
+}
