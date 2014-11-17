@@ -22,7 +22,8 @@ var server = http.createServer(function(request, response) {
     var bits = request.url.split('/');
 
     if(bits[1] === 'borked'){
-      response.writeHead(500);
+      response.writeHead(500, { 'Content-Type': 'text/html' });
+      response.write('<html><body><h1>Ohes noes it r teh borked</h1></body></html>');
       response.end();
       return;
     }

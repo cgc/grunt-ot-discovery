@@ -21,7 +21,7 @@ module.exports = function(grunt){
                 return done(new Error('status code was: ' + res.statusCode));
             }
 
-            var lease = JSON.parse(body || "{}");
+            var lease = options.ignoreErrors ? {} : JSON.parse(body || "{}");
             grunt.log.ok(options.action + ' => ' + res.statusCode + ': ' + JSON.stringify(lease));
             done();
         });
