@@ -17,12 +17,14 @@ module.exports = function(grunt){
                 return done(err);
             }
 
-            if(res.statusCode !== 200 && !options.ignoreErrors){
+            var statusCode = res && res.statusCode;
+
+            if(statusCode !== 200 && !options.ignoreErrors){
                 return done(new Error('status code was: ' + res.statusCode));
             }
 
             var lease = options.ignoreErrors ? {} : JSON.parse(body || "{}");
-            grunt.log.ok(options.action + ' => ' + res.statusCode + ': ' + JSON.stringify(lease));
+            grunt.log.ok(options.action + ' => ' + statusCode + ': ' + JSON.stringify(lease));
             done();
         });
     };

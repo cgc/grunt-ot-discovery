@@ -31,6 +31,13 @@ module.exports = function(grunt) {
                     action: 'announce',
                     ignoreErrors: true
                 }
+            },
+            'ignore-errors-bad-port': {
+                options: {
+                    server: '127.0.0.1:8887',
+                    action: 'unannounce',
+                    ignoreErrors: true
+                }
             }
         }
     });
